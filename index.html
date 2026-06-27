@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="et.css">
+</head>
+<body>
+    <h1>Expense Tracker</h1>
+    <span>Log your daily expenses totals update automatically</span>
+    
+    
+    <div class="row">
+     <div class="des">
+        <p>DESCRIPTION</p>
+        <input type="desc" title="d" placeholder="  e.g shopping"> 
+     </div>
+    
+    
+        <div class="cat">
+            <p>CATEGORY</p>
+            <select id="drop">
+                <option>food</option>
+                <option>grocery</option>
+                <option>shopping</option>
+                <option>online orders</option>
+                <option>travelling</option>
+                <option>movies</option>
+                <option>subscriptions</option>
+                <option>bills</option>
+                <option>others</option>
+            </select>
+        </div>
+
+        <div class="amount">
+            <p>AMOUNT($)</p>
+            <input type="number" id="amount" placeholder="  Enter amount">
+        </div>
+
+        <div class="row">
+            <button><b> + Add Row </b></button>
+        </div>
+
+        <div class="clear">
+            <button> <b>Clear All</b> </button>
+        </div>
+    </div>
+   
+    <table>
+      <thead>
+        <tr>
+            <th class="num">#</th>
+            <th class="date">DATE</th>
+            <th class="description">DESCRIPTION</th>
+            <th class="cate">CATEGORY</th>
+            <th class="am">AMOUNT</th>
+        </tr>
+      </thead>
+     <tbody id="expense-rows">
+     </tbody>
+    </table>
+
+
+    <script scr="et.js"></script>
+</body>
+</html>
